@@ -9,7 +9,14 @@
 pip install -r requirements.txt
 ```
 
-### Running Same-Speaker Adaptation
+### Preprocessing code
+Preprocessing code is handled in the `asr_adaptation.py` file.
+
+### Training code
+No training command needed since this paper does not require training model.
+
+### Evaluation code
+- Running Same-Speaker Adaptation
 ```
 python asr_adaptation.py \
 --output_dir /nlp/scr/$USER/20250513_shot_results \
@@ -22,8 +29,7 @@ python asr_adaptation.py \
 --seed 42 \
 ```
 
-### Running Different-Speaker Adaptation
-
+- Running Different-Speaker Adaptation
 ```
 python asr_adaptation.py \
 --output_dir /nlp/scr/$USER/20250513_shot_results \
