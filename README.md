@@ -71,6 +71,6 @@ python asr_adaptation.py \
 
 ### Analyzing Results
 
-Once the `asr_adaptation.py` generates the `all_results_summary.json` files, run `ASR_Adaptation_analysis.ipynb` on those files for result analysis.
+Once the `asr_adaptation.py` generates the `all_results_summary.json` files, run `L2Dataset_Results_analysis.ipynb` on those files for result analysis.
 
 ---
