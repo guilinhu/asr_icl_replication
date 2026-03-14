@@ -1,5 +1,5 @@
 ### Prerequisites
-- Access to a machine with GPU (we used A100s)
+- Access to a machine with GPU (we used l40)
 
 ### Dataset downloading
 - The `asr_adaptation.py` file should handle the dataset downloading for you
