@@ -10,7 +10,6 @@ pip install -r requirements.txt
 ```
 
 ### Running Same-Speaker Adaptation
-- for same speaker few shot evaluation, run
 ```
 python asr_adaptation.py \
 --output_dir /nlp/scr/$USER/20250513_shot_results \
@@ -35,6 +34,33 @@ python asr_adaptation.py \
 --speaker_condition different \
 --prompt_type both \
 --seed 42 \
+```
+
+### Running new segment duration for same speaker and different speaker adaptation
+```
+python asr_adaptation.py \
+--output_dir /nlp/scr/$USER/20250513_shot_results \
+--cache_dir /nlp/scr/$USER/.cache/huggingface \
+--max_shots 12 \
+--max_trials 50 \
+--dataset all \
+--speaker_condition same \
+--prompt_type both \
+--seed 42 \
+--min_duration 5.0
+```
+
+```
+python asr_adaptation.py \
+--output_dir /nlp/scr/$USER/20250513_shot_results \
+--cache_dir /nlp/scr/$USER/.cache/huggingface \
+--max_shots 12 \
+--max_trials 50 \
+--dataset all \
+--speaker_condition different \
+--prompt_type both \
+--seed 42 \
+--min_duration 5.0
 ```
 
 ### Analyzing Results
